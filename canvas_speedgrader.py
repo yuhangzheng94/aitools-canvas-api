@@ -131,9 +131,9 @@ class CanvasAPIClient:
             List of students with their data
         """
         self.logger.info(f"Fetching students for course {course_id}")
-        endpoint = f"courses/{course_id}/students"
+        endpoint = f"courses/{course_id}/users"
         
-        students = self._get_paginated(endpoint, params={'include': ['email', 'login_id']})
+        students = self._get_paginated(endpoint, params={'enrollment_type[]': ['student'], 'include[]': ['email', 'login_id']})
         self.logger.info(f"Retrieved {len(students)} students")
         return students
     
