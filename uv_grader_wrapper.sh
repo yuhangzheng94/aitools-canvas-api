@@ -10,7 +10,7 @@
 set -euo pipefail
 
 # Default configuration
-DEFAULT_PROJECT_PATH="/Users/satkinson/Work/vtech/cs5740/2025/spring/Grading/Discussion-General"
+DEFAULT_PROJECT_PATH="../aitools-discussion-grader"
 DEFAULT_GRADER_SCRIPT="discussion-grader/canvas_speedgrader.py"
 
 # Global variables
